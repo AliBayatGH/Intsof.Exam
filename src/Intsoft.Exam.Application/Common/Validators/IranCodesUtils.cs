@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Intsoft.Exam.Application.Validators
+namespace Intsoft.Exam.Application.Common.Validators
 {
     /// <summary>
     /// IranCodes Utils

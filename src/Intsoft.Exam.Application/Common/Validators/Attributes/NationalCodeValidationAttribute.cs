@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Intsoft.Exam.Application.Validators.Attributes
+namespace Intsoft.Exam.Application.Common.Validators.Attributes
 {
     /// <summary>
     /// Determines whether the specified value of the object is a valid IranianNationalCode.

@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Intsoft.Exam.Application.Validators.Attributes;
+using Intsoft.Exam.Application.Common.Validators.Attributes;
 
 namespace Intsoft.Exam.Application.Models
 {

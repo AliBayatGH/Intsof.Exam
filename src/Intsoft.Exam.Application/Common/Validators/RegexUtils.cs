@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Intsoft.Exam.Application.Validators
+namespace Intsoft.Exam.Application.Common.Validators
 {
     /// <summary>
     /// متدهای کمکی مبتنی بر عبارات باقاعده
@@ -99,7 +99,7 @@ namespace Intsoft.Exam.Application.Validators
             if (string.IsNullOrWhiteSpace(body))
                 return string.Empty;
 
-            if (ContainsFarsi(body, allowWhitespace: true))
+            if (body.ContainsFarsi(allowWhitespace: true))
                 return $"<div style='text-align: right; font-family:{fontFamily}; font-size:{fontSize};' dir='rtl'>{body}</div>";
             return $"<div style='text-align: left; font-family:{fontFamily}; font-size:{fontSize};' dir='ltr'>{body}</div>";
         }
@@ -132,6 +132,6 @@ namespace Intsoft.Exam.Application.Validators
         /// آیا عبارت مدنظر شامل نیم فاصله است؟
         /// </summary>
         public static bool ContainsThinSpace(this string text)
-            => ContainsHalfSpace(text);
+            => text.ContainsHalfSpace();
     }
 }

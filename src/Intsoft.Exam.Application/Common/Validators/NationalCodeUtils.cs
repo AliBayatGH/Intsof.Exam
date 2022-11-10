@@ -1,4 +1,4 @@
-﻿namespace Intsoft.Exam.Application.Validators
+﻿namespace Intsoft.Exam.Application.Common.Validators
 {
     /// <summary>
     /// Validate IR National Code

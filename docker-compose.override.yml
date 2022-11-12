@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+
+  intsoftExamDb:
+    container_name: intsoftExamDb
+    environment:
+      - MSSQL_SA_PASSWORD="Ss01441373"
+      - ACCEPT_EULA="Y"
+    restart: always
+    ports:
+      - "1433:1433" 
+
+  intsoft.exam.api:
+    container_name: intsoftExam.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:ApplicationConnectionString=Server=intsoftExamDb;Database=intsoftExamDb;User Id=sa;Password=Ss01441373;Integrated Security=false;" 
+    depends_on:
+      - intsoftExamDb 
+    ports:
+      - "5001:80"

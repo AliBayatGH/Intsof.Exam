@@ -11,11 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9F6007FD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intsoft.Exam.IntegrationTests", "tests\Intsoft.Exam.IntegrationTests\Intsoft.Exam.IntegrationTests.csproj", "{4A2BE357-4B77-4580-9057-D2E4F16F3ACF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intsoft.Exam.Domain", "src\Intsoft.Exam.Domain\Intsoft.Exam.Domain.csproj", "{7D2D9975-F4AB-438C-99EB-0927F56A8680}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intsoft.Exam.Domain", "src\Intsoft.Exam.Domain\Intsoft.Exam.Domain.csproj", "{7D2D9975-F4AB-438C-99EB-0927F56A8680}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intsoft.Exam.Application", "src\Intsoft.Exam.Application\Intsoft.Exam.Application.csproj", "{6C0442FC-B70F-47C2-BBFF-5A0A23E83098}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intsoft.Exam.Application", "src\Intsoft.Exam.Application\Intsoft.Exam.Application.csproj", "{6C0442FC-B70F-47C2-BBFF-5A0A23E83098}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intsoft.Exam.Infrastructure", "src\Intsoft.Exam.Infrastructure\Intsoft.Exam.Infrastructure.csproj", "{11F3C327-174E-423E-9DFF-6BB6B0D790AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intsoft.Exam.Infrastructure", "src\Intsoft.Exam.Infrastructure\Intsoft.Exam.Infrastructure.csproj", "{11F3C327-174E-423E-9DFF-6BB6B0D790AF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{905995E7-8F0B-49AA-858C-196CC20B793A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{11F3C327-174E-423E-9DFF-6BB6B0D790AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11F3C327-174E-423E-9DFF-6BB6B0D790AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11F3C327-174E-423E-9DFF-6BB6B0D790AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905995E7-8F0B-49AA-858C-196CC20B793A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905995E7-8F0B-49AA-858C-196CC20B793A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905995E7-8F0B-49AA-858C-196CC20B793A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905995E7-8F0B-49AA-858C-196CC20B793A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+
+  intsoftExamDb:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+
+  intsoft.exam.api:
+    image: ${DOCKER_REGISTRY-}intsoftexamapi
+    build:
+      context: .
+      dockerfile: src/Intsoft.Exam.API/Dockerfile
